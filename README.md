@@ -3,8 +3,8 @@
 
 ## 下载并构建扩展
 ```
-git clone <此处填写仓库的网址>
-cd <此处填写文件夹名称>
+git clone https://github.com/bddjr/clipcc-extension-tempvar
+cd clipcc-extension-tempvar
 pnpm i
 pnpm build
 ```
