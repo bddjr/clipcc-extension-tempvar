@@ -17,9 +17,10 @@ const blocks: MyBlock<BlockParams>[] = [
             }
         },
         function(args, util): any {
+            const name = String(args.name)
             return (
-                tempvar.has(args.name)
-                    ? tempvar.get(args.name)
+                tempvar.has(name)
+                    ? tempvar.get(name)
                     : ''
             )
         }
@@ -38,7 +39,8 @@ const blocks: MyBlock<BlockParams>[] = [
             },
         },
         function(args, util): void {
-            tempvar.set(args.name, args.value)
+            const name = String(args.name)
+            tempvar.set(name, args.value)
         }
     }),
     defineBlock({
@@ -55,7 +57,9 @@ const blocks: MyBlock<BlockParams>[] = [
             },
         },
         function(args, util): void {
-            let left = +tempvar.get(args.name)
+            const name = String(args.name)
+
+            let left = +tempvar.get(name)
             if (Number.isNaN(left))
                 left = 0
 
@@ -63,7 +67,7 @@ const blocks: MyBlock<BlockParams>[] = [
             if (Number.isNaN(right))
                 right = 0
 
-            tempvar.set(args.name, left + right)
+            tempvar.set(name, left + right)
         }
     }),
     defineBlock({
@@ -80,12 +84,13 @@ const blocks: MyBlock<BlockParams>[] = [
             },
         },
         function(args, util): void {
+            const name = String(args.name)
             const left = (
-                tempvar.has(args.name)
-                    ? String(tempvar.get(args.name))
+                tempvar.has(name)
+                    ? String(tempvar.get(name))
                     : ''
             )
-            tempvar.set(args.name, left + args.value)
+            tempvar.set(name, left + args.value)
         }
     }),
     defineBlock({
@@ -98,7 +103,8 @@ const blocks: MyBlock<BlockParams>[] = [
             }
         },
         function(args, util): boolean {
-            return tempvar.has(args.name)
+            const name = String(args.name)
+            return tempvar.has(name)
         }
     }),
     defineBlock({
@@ -111,7 +117,8 @@ const blocks: MyBlock<BlockParams>[] = [
             }
         },
         function(args, util): boolean {
-            return tempvar.delete(args.name)
+            const name = String(args.name)
+            return tempvar.delete(name)
         }
     }),
     defineBlock({
