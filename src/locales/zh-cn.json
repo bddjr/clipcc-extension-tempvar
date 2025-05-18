@@ -1,23 +1,14 @@
 {
-    "name": "ClipCC 扩展",
-    "description": "介绍",
-    "hello": {
-        "": "你好",
-        "hello": "说你好",
-        "log": "打印日志",
-        "abc": {
-            "": "abc[a]",
-            "a": {
-                "item1": "a",
-                "item2": "b",
-                "item3": "c"
-            }
-        },
-        "typeof": "[a]的类型"
-    },
-    "boolean": {
-        "": "布尔值",
-        "boolean": "[a]",
-        "equal": "[a]==[b]"
+    "name": "临时变量",
+    "description": "-",
+    "tempvar": {
+        "": "临时变量",
+        "get": "临时变量 [name]",
+        "set": "临时变量 [name] 设为 [value]",
+        "plus": "临时变量 [name] 增加 [number]",
+        "join": "临时变量 [name] 连接 [value]",
+        "has": "临时变量 [name] 已定义?",
+        "delete": "删除临时变量 [name]",
+        "clear": "清空临时变量"
     }
 }

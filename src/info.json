@@ -1,8 +1,8 @@
 {
-    "id": "bddjr.makeccx",
+    "id": "bddjr.tempvar",
     "author": "bddjr#110",
     "version": "0.0.1",
-    "icon": "assets/icon.png",
-    "inset_icon": "assets/smile.svg",
+    "icon": "assets/cover.svg",
+    "inset_icon": "assets/icon.svg",
     "api": 1
 }

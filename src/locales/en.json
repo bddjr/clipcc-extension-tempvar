@@ -1,23 +1,14 @@
 {
-    "name": "ClipCC Extension",
-    "description": "description",
-    "hello": {
-        "": "Hello",
-        "hello": "Say hello",
-        "log": "Print log",
-        "abc": {
-            "": "abc[a]",
-            "a": {
-                "item1": "a",
-                "item2": "b",
-                "item3": "c"
-            }
-        },
-        "typeof": "typeof[a]"
-    },
-    "boolean": {
-        "": "boolean",
-        "boolean": "[a]",
-        "equal": "[a]==[b]"
+    "name": "Temp Var",
+    "description": "-",
+    "tempvar": {
+        "": "Temp Var",
+        "get": "tempvar [name]",
+        "set": "tempvar [name] set [value]",
+        "plus": "tempvar [name] plus [number]",
+        "join": "tempvar [name] join [value]",
+        "has": "tempvar [name] defined?",
+        "delete": "delete tempvar [name]",
+        "clear": "clear tempvar"
     }
 }

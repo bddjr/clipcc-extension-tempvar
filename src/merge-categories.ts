@@ -2,16 +2,14 @@ import { type } from 'clipcc-extension'
 import { appendID } from './utils/append-id'
 import { id as ccxID } from "./info.json"
 
-import { category_hello } from './categories/hello/hello'
-import { category_boolean } from './categories/boolean/boolean'
 import { logBlockError } from './utils/log-block-error'
+import { category_tempvar } from './categories/tempvar/tempvar'
 
 
-const globalColor: string = '#66CCFF'
+const globalColor: string = '#FF8C1A'
 
 const input: MyCategory[] = [
-    category_hello,
-    category_boolean,
+    category_tempvar,
 ]
 
 
