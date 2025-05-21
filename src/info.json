@@ -1,8 +1,8 @@
 {
     "id": "bddjr.tempvar",
-    "author": "bddjr#110",
-    "version": "0.0.2",
-    "icon": "assets/cover.svg",
-    "inset_icon": "assets/icon.svg",
+    "author": "bddjr #110",
+    "version": "0.0.3",
+    "icon": "assets/cover.tinypng.png",
+    "inset_icon": "assets/icon.output.svg",
     "api": 1
 }

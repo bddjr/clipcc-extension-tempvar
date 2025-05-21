@@ -29,6 +29,10 @@ importers:
       typescript:
         specifier: '>=5.8.3'
         version: 5.8.3
+    devDependencies:
+      makeccx:
+        specifier: ^1.1.0
+        version: 1.1.0
 
 packages:
 
@@ -555,6 +559,11 @@ packages:
   lru-cache@11.1.0:
     resolution: {integrity: sha512-QIXZUBJUx+2zHUdQujWejBkcD9+cs94tLn0+YL8UrCh+D5sCXZ4c7LaEH48pNwRY3MLDgqUFyhlCyjJPf1WP0A==}
     engines: {node: 20 || >=22}
+
+  makeccx@1.1.0:
+    resolution: {integrity: sha512-KNEewu8WeOUu2bc3OdN5rxniOBBvf2rFL0LA0gvf/cwp9UJ5idUm74KnlseB6s9MLLiHWhlZjO3fpJe4p9ReZw==}
+    engines: {node: '>=v20.8.0'}
+    hasBin: true
 
   math-intrinsics@1.1.0:
     resolution: {integrity: sha512-/IXtbwEk5HTPyEwyKX6hGkYXxM9nbj64B+ilVJnC/R6B0pH5G4V3b0pVbL7DBj4tkhBAppbQUlf6F6Xl9LHu1g==}
@@ -1444,6 +1453,13 @@ snapshots:
       strip-bom: 3.0.0
 
   lru-cache@11.1.0: {}
+
+  makeccx@1.1.0:
+    dependencies:
+      clipcc-extension: 0.2.0
+      esbuild: 0.25.4
+      jszip: 3.10.1
+      rimraf: 6.0.1
 
   math-intrinsics@1.1.0: {}
 
